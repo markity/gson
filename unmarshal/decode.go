@@ -10,10 +10,6 @@ import (
 	"strings"
 )
 
-func Decode(input interface{}) error {
-	return decode("", input, reflect.ValueOf(input).Elem())
-}
-
 type merror struct {
 	Errors []string
 }
